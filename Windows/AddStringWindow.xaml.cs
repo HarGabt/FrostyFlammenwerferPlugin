@@ -3,6 +3,7 @@ using Frosty.Core;
 using Frosty.Core.Controls;
 using FrostySdk.Ebx;
 using FrostySdk.Managers;
+using FrostySdk.Managers.Entries;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,9 +12,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 
-#if FROSTY_107
-using FrostySdk.Managers.Entries;
-#endif
 
 namespace FsLocalizationPlugin.Windows
 {

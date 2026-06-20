@@ -1,15 +1,14 @@
 using Frosty.Core;
 using FrostySdk.IO;
 using FrostySdk.Managers;
+using FrostySdk.Managers.Entries;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 
-#if FROSTY_107
-using FrostySdk.Managers.Entries;
-#endif
+
 
 namespace FsLocalizationPlugin.Flammen
 {

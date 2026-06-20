@@ -4,16 +4,12 @@ using Frosty.Core.Mod;
 using Frosty.Hash;
 using FrostySdk;
 using FrostySdk.IO;
-using FrostySdk.Managers;
+using FrostySdk.Managers.Entries;
 using FrostySdk.Resources;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-
-#if FROSTY_107
-using FrostySdk.Managers.Entries;
-#endif
 
 //namespace FsLocalizationPlugin.Handlers
 // Frosty cannot detect a different namespace
@@ -128,9 +124,7 @@ namespace FsLocalizationPlugin
                     newHistogramChunkEntry.Size = newHistogramData.Length;
                     newHistogramChunkEntry.H32 = Fnv1.HashString(origEntry.Name.ToLower());
                     newHistogramChunkEntry.FirstMip = -1;
-#if !FROSTY_107
                     newHistogramChunkEntry.IsTocChunk = true;
-#endif
 
                     runtimeResources.AddResource(new RuntimeChunkResource(newHistogramChunkEntry), newHistogramData);
 
@@ -145,9 +139,7 @@ namespace FsLocalizationPlugin
                     newStringChunkEntry.Size = newStringData.Length;
                     newStringChunkEntry.H32 = Fnv1.HashString(origEntry.Name.ToLower());
                     newStringChunkEntry.FirstMip = -1;
-#if !FROSTY_107
                     newStringChunkEntry.IsTocChunk = true;
-#endif
 
                     runtimeResources.AddResource(new RuntimeChunkResource(newStringChunkEntry), newStringData);
                 }

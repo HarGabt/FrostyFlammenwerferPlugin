@@ -1,6 +1,7 @@
 using Frosty.Controls;
 using Frosty.Core;
 using Frosty.Core.Windows;
+using FrostySdk.Managers.Entries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,6 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows;
 
-#if FROSTY_107
-using FrostySdk.Managers.Entries;
-#endif
 
 namespace FsLocalizationPlugin.Windows
 {

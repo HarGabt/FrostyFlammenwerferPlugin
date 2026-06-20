@@ -2,6 +2,7 @@ using Frosty.Core;
 using FrostySdk.Ebx;
 using FrostySdk.IO;
 using FrostySdk.Managers;
+using FrostySdk.Managers.Entries;
 using FrostySdk.Resources;
 using FsLocalizationPlugin.Windows;
 using System;
@@ -9,9 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 
-#if FROSTY_107
-using FrostySdk.Managers.Entries;
-#endif
+
 
 //namespace FsLocalizationPlugin.Resources
 // Frosty cannot detect a different namespace
