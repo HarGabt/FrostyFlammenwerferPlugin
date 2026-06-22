@@ -4,6 +4,7 @@ using Frosty.Core.Mod;
 using Frosty.Hash;
 using FrostySdk;
 using FrostySdk.IO;
+using FrostySdk.Managers;
 using FrostySdk.Managers.Entries;
 using FrostySdk.Resources;
 using System;
